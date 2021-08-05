@@ -1,0 +1,41 @@
+{
+  "private": true,
+  "name": "deligoo-specs",
+  "version": "0.0.0-development",
+  "description": "DeliGoo specs",
+  "scripts": {
+    "cypress:version": "cypress version",
+    "cypress:verify": "cypress verify",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "cypress:run:record": "cypress run --record",
+    "cypress:run:chrome": "cypress run --browser chrome",
+    "cypress:run:firefox": "cypress run --browser firefox",
+    "cypress:run:headed": "cypress run --headed",
+    "test": "cypress run",
+    "test:ci": "cypress:run",
+    "test:ci:record": "cypress:run:record",
+    "test:ci:chrome": "cypress:run:chrome",
+    "test:ci:firefox": "cypress:run:firefox",
+    "test:ci:headed": "cypress:run:headed",
+    "lint": "eslint --fix cypress/integration js",
+    "types": "tsc --noEmit",
+    "e2e": "cypress run"
+  },
+  "dependencies": {
+    "@babel/core": "^7.14.2",
+    "@babel/preset-typescript": "^7.13.0",
+    "@cypress/webpack-preprocessor": "^5.8.0",
+    "babel-loader": "^8.2.2",
+    "cypress-localstorage-commands": "^1.4.4",
+    "eslint": "^7.26.0",
+    "eslint-plugin-cypress": "^2.11.3",
+    "prettier": "^2.3.0",
+    "ts-loader": "^9.1.2",
+    "typescript": "^4.2.4",
+    "webpack": "^4.46.0"
+  },
+  "devDependencies": {
+    "cypress": "^8.2.0"
+  }
+}
